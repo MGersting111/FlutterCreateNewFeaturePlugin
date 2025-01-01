@@ -21,6 +21,4 @@
         </action>
     </actions>
 
-    <!-- URL to your plugin's icon for the IntelliJ Plugin Store -->
-    <icon>icons/pluginIcon.svg</icon>
 </idea-plugin>
