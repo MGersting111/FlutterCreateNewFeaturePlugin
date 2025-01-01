@@ -1,31 +1,26 @@
-<!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
+    <!-- Unique identifier of the plugin. -->
+    <id>com.flutterplugin.newfeature</id>
 
-  <!-- Unique identifier of the plugin. It should be FQN. It cannot be changed between the plugin versions. -->
-  <id>com.flutterplugin.newfeature</id>
-  <!-- Public plugin name should be written in Title Case.
-       Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-name -->
-  <name>FlutterCreateNewFeature</name>
+    <!-- Public plugin name -->
+    <name>FlutterCreateNewFeature</name>
 
-  <!-- A displayed Vendor name or Organization ID displayed on the Plugins Page. -->
-  <vendor email="michagersting@sinovo.de" url="https://www.sinovo.de/">Sinovo</vendor>
+    <!-- Vendor information -->
+    <vendor email="michagersting@sinovo.de" url="https://www.sinovo.de/">Sinovo</vendor>
 
-  <!-- Description of the plugin displayed on the Plugin Page and IDE Plugin Manager.
-       Simple HTML elements (text formatting, paragraphs, and lists) can be added inside of <![CDATA[ ]]> tag.
-       Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-description -->
+    <!-- Plugin description -->
     <description>Erstellt eine neue Ordnerstruktur für ein Flutter-Feature mit vorgegebenen Dart-Dateien.</description>
 
+    <!-- Product and plugin compatibility -->
+    <depends>com.intellij.modules.platform</depends>
 
-    <!-- Product and plugin compatibility requirements.
-         Read more: https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
-  <depends>com.intellij.modules.platform</depends>
-
-  <!-- Extension points defined by the plugin.
-       Read more: https://plugins.jetbrains.com/docs/intellij/plugin-extension-points.html -->
+    <!-- Extension points -->
     <actions>
         <action id="NewFeatureAction" class="com.example.plugin.NewFeatureAction" icon="/icons/new_feature_icon.png" text="Neues Feature" description="Erstellt eine neue Ordnerstruktur für ein Feature">
             <add-to-group group-id="NewGroup" anchor="last" />
         </action>
     </actions>
 
+    <!-- URL to your plugin's icon for the IntelliJ Plugin Store -->
+    <icon>icons/pluginIcon.svg</icon>
 </idea-plugin>
